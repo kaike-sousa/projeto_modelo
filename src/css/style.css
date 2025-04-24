@@ -1,0 +1,218 @@
+*{
+    font-family: "Poppins", sans-serif;;
+}
+
+/* INICIO BARRA DE INFORMAÇÃO */
+.barra-informativa {
+    font-weight: 500; /* Levemente mais grosso que o normal */
+    background-color: #913c6f; /* Cor de fundo */
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    overflow: hidden; /* Garante que o texto que sair da tela não seja visível */
+    position: relative;
+    width: 100%; /* 100% da largura da tela */
+}
+
+.conteudo-rolando {
+    display: inline-block;
+    white-space: nowrap;
+    animation: rolar 40s linear infinite; /* A animação será contínua */
+}
+
+@keyframes rolar {
+    0% {
+      transform: translateX(0); /* Começa com o texto já visível */
+    }
+    100% {
+      transform: translateX(-100%); /* Quando o texto desaparecer, a próxima parte já estará visível */
+    }
+}
+
+@media (max-width: 768px) {
+    .barra-informativa {
+      font-size: 0.75rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    padding: 0.6rem 0;
+    }
+
+    .conteudo-rolando {
+      animation: rolar 40s linear infinite; /* Rola mais rápido no celular */
+    }
+}
+
+/* FIM DA BARRA */
+
+
+/* INICIO NAVBAR */
+.navbar-brand {
+    font-weight: 700; /* Peso mais forte para maior destaque */
+    font-size: 2rem;
+}
+
+.logo-loja{
+    vertical-align: middle;
+    height: 3rem;
+    width: auto;
+}
+
+@media (max-width: 740px) {
+    .navbar-brand .logo-loja {
+    height: 2.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar-brand .logo-loja {
+    height: 2.0rem;
+    }
+}
+/* FIM NAV BAR */
+
+/* OUTRA BARRA DE INFORMAÇÃO */
+.barra-informativa2 {
+    font-weight: 500; /* Levemente mais grosso que o normal */
+    background-color: #913c6f; /* Cor de fundo */
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    overflow: hidden; /* Garante que o texto que sair da tela não seja visível */
+    position: relative;
+    width: 100%; /* 100% da largura da tela */
+}
+
+.conteudo-rolando2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: rolar 40s linear infinite; /* A animação será contínua */
+}
+
+@keyframes rolar {
+    0% {
+      transform: translateX(0); /* Começa com o texto já visível */
+    }
+    100% {
+      transform: translateX(-100%); /* Quando o texto desaparecer, a próxima parte já estará visível */
+    }
+}
+
+@media (max-width: 768px) {
+    .barra-informativa2 {
+      font-size: 0.75rem; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    padding: 0.6rem 0;
+    }
+
+    .conteudo-rolando2 {
+      animation: rolar 40s linear infinite; /* Rola mais rápido no celular */
+    }
+}
+/* FIM DA BARRA */
+
+/* INCIO CARROSEL */
+/* estilo padrão do carrossel */
+.carrossel-custom {
+    width: 100vw;
+    height: 80vh; /* você pode ajustar esse valor */
+    overflow: hidden;
+}
+
+.carrossel-custom .carousel-inner,
+.carrossel-custom .carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carrossel-custom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* centraliza o foco da imagem */
+}
+
+@media (max-width: 768px) {
+    .carrossel-custom {
+    height: 40vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .carrossel-custom {
+    height: 50vh;
+    }
+}
+
+
+/* FIM CARROSEL */
+
+/* INCIO CARDS */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Dá espaçamento entre os elementos, caso necessário */
+}
+
+.cards h3{
+    justify-content: center;
+    font-weight: 680;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #000000;
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+
+.cards h2{
+    justify-content: center;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: #646263; 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+.botao-comprar{
+    background-color: #000000; 
+    color: white;
+    padding: 20px 24px;
+    text-decoration: none;
+    border-radius: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    display: inline-block; /* permite aplicar a margem */
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.botao-comprar:hover {
+    background-color: #b8b4b4;
+    color: #000000;
+}
+
+
+@media (max-width: 440px) {
+    .cards h2{
+        font-size: 1.2rem;
+    }
+    .cards h3{
+        font-size: 1.6rem;
+    }
+    .botao-comprar{ 
+        margin: 0px;
+        padding: 0.5rem;
+    }
+    .cards h5{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .cards p{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+/* FIM CARDS */
+
+
+
