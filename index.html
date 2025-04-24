@@ -122,61 +122,150 @@
     <!-- incio do main -->
     <main>
         <!-- Cards de Mais Vendidos -->
-        <div class="cards">
-            <h3>MAIS VENDIDOS</h3>
-            <h2>Os queridinhos da loja</h2>
-            
-            <div class="row row-cols-2 row-cols-md-4 g-4 mx-1 px">
+        <section class="mais-vendidos">
 
-                <!-- card 1 -->
-                <div class="col">
-                <div class="card">
-                    <img src="src/images/cards/imagem modelo 1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Vestido Formaji</h5>
-                    <p class="card-text">R$ 30,00</p>
-                    <a href="#" class="botao-comprar">Comprar</a>
+            <!-- texto em cima dos cards -->
+            <div class="texto-acima">
+                <h3>MAIS VENDIDOS</h3>
+                <h2>Os queridinhos da loja</h2>
+            </div>
+
+
+            <!-- carrosel desktops -->
+            <div class="d-none d-md-block">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                </div>
-                </div>
+                    
+                    <div class="carousel-inner">
+                        <!-- slide 1 -->
+                        <div class="carousel-item active">
+                            
+                            <!-- config dos cards -->
+                            <div class="row row-cols-2 row-cols-md-4 g-4 mx-1 px">
+                                <!-- card 1 -->
+                                <div class="col">
+                                <div class="card">
+                                    <img src="src/images/cards/imagem modelo 1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Vestido Formaji</h5>
+                                    <p class="card-text">R$ 30,00</p>
+                                    <a href="#" class="botao-comprar">Comprar</a>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <!-- card 2 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="src/images/cards/imagem modelo 2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Vestido Isa</h5> 
+                                        <p class="card-text">R$ 50,00</p>
+                                        <a href="#" class="botao-comprar">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
                 
-                <!-- card 2 -->
-                <div class="col">
-                    <div class="card">
-                        <img src="src/images/cards/imagem modelo 2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Vestido Isa</h5> 
-                        <p class="card-text">R$ 50,00</p>
-                        <a href="#" class="botao-comprar">Comprar</a>
+                                <!-- card 3 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="src/images/cards/imagem modelo 3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Vestido Yasmin</h5>
+                                        <p class="card-text">R$ 34,00</p>
+                                        <a href="#" class="botao-comprar">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- card 4 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="src/images/cards/imagem modelo 4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Vestido Formaji</h5>
+                                        <p class="card-text">R$ 50,00</p>
+                                        <a href="#" class="botao-comprar">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- card 3 -->
-                <div class="col">
-                    <div class="card">
-                        <img src="src/images/cards/imagem modelo 3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Vestido Yasmin</h5>
-                        <p class="card-text">R$ 34,00</p>
-                        <a href="#" class="botao-comprar">Comprar</a>
+                        <!-- slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row row-cols-2 row-cols-md-4 g-4 mx-1 px">
+                                <!-- card 1 -->
+                                <div class="col">
+                                <div class="card">
+                                    <img src="src/images/cards/modelo 5.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Vestido Formaji</h5>
+                                    <p class="card-text">R$ 30,00</p>
+                                    <a href="#" class="botao-comprar">Comprar</a>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <!-- card 2 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="src/images/cards/modelo 6.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Vestido Isa</h5> 
+                                        <p class="card-text">R$ 50,00</p>
+                                        <a href="#" class="botao-comprar">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- card 3 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="src/images/cards/modelo 7.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Vestido Yasmin</h5>
+                                        <p class="card-text">R$ 34,00</p>
+                                        <a href="#" class="botao-comprar">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <!-- card 4 -->
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="src/images/cards/modelo 8.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Vestido Formaji</h5>
+                                        <p class="card-text">R$ 50,00</p>
+                                        <a href="#" class="botao-comprar">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- card 4 -->
-                <div class="col">
-                    <div class="card">
-                        <img src="src/images/cards/imagem modelo 4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h5 class="card-title">Vestido Formaji</h5>
-                        <p class="card-text">R$ 50,00</p>
-                        <a href="#" class="botao-comprar">Comprar</a>
-                        </div>
-                    </div>
+                    <!-- botoes de navegação -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-        </div>
+
+            <!-- carrosel androids -->
+
+
+        </section>
 
     </main>
     <!-- fim do main -->
